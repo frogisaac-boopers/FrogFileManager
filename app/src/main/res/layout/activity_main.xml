@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/statusText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Shizuku Status: Unknown"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnRequestShizuku"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="1. Request Shizuku Access" />
+
+    <EditText
+        android:id="@+id/pathInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="/storage/emulated/0/Android/data/com.BabTeam.Baboon" />
+
+    <Button
+        android:id="@+id/btnListFiles"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="2. List Files with Shizuku" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/logText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="monospace"
+            android:text="Logs will display here..."
+            android:textSize="12sp" />
+    </ScrollView>
+</LinearLayout>
